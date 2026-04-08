@@ -1,5 +1,12 @@
 # Pomodoro CLI
 
+![Node.js](https://img.shields.io/badge/Node.js-16%2B-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?logo=typescript&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-lightgrey?logo=apple&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![GitHub repo size](https://img.shields.io/github/repo-size/PedroLopezJ/PomodoroCLI)
+![GitHub last commit](https://img.shields.io/github/last-commit/PedroLopezJ/PomodoroCLI)
+
 A terminal-based Pomodoro timer with ASCII art, color-coded phases, and system notifications.
 
 ## Features
