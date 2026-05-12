@@ -26,25 +26,28 @@ function renderHeader(): string {
 }
 
 function renderTomato(): string {
-  const g  = chalk.greenBright;
-  const G  = chalk.green;
-  const r  = chalk.redBright;
-  const R  = chalk.hex('#cc2200');
-  const y  = chalk.yellow;
-  const w  = chalk.white;
+  const leaf   = chalk.greenBright;
+  const stem   = chalk.green;
+  const body   = chalk.redBright;
+  const shade  = chalk.hex('#8B0000');
+  const shine  = chalk.yellowBright;
+  const eyes   = chalk.white;
+  const blush  = chalk.hex('#ff69b4');
+  const mouth  = chalk.hex('#a00000');
+  const tongue = chalk.hex('#ffb6c1');
 
   return [
-    g('              ,'),
-    g('             /|\\'),
-    G('           _( | )_'),
-    G('          / \\|/ \\ '),
-    r('         /         \\'),
-    r('        /  ') + y('◉') + r('     ') + y('◉') + r('  \\'),
-    r('       |             |'),
-    r('       |    ') + w('~~~~~') + r('    |'),
-    R('        \\           /'),
-    R('         \\         /'),
-    R('          `-------\''),
+    '       ' + leaf('\\\\|//')  + '       ',
+    '      ' + stem('__\\|/__') + '      ',
+    '    ' + body(".'") + '   ' + stem('|') + '   ' + body("'.") + '    ',
+    '   ' + body('/')  + '     ' + shine('✦') + '     ' + body('\\') + '   ',
+    '  ' + body('/')  + '   ' + eyes('◠') + '     ' + eyes('◠') + '   ' + body('\\') + '  ',
+    ' '  + body('|')  + ' '   + blush('♥') + '           ' + blush('♥') + ' ' + body('|') + ' ',
+    ' '  + body('|')  + '     ' + mouth('\\___/') + '     ' + body('|') + ' ',
+    '  ' + body('\\') + '     ' + tongue('‿‿‿') + '     ' + body('/') + '  ',
+    '   ' + shade('\\') + '           ' + shade('/')  + '   ',
+    '    ' + shade("'.") + '       ' + shade(".'") + '    ',
+    '      ' + shade("'-___-'") + '      ',
   ].join('\n');
 }
 
